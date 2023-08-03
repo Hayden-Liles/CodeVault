@@ -1,0 +1,67 @@
+$body-bg: #eeeeee;
+
+$primary: #6750A4;
+$on-primary: #FFFFFF;
+$primary-container: #EADDFF;
+$on-primary-container: #21005D;
+
+$secondary: #625B71;
+$on-secondary: #FFFFFF;
+$secondary-container: #E8DEF8;
+$on-secondary-container: #1D192B;
+
+$teriary: #7D5260;
+$on-teriary: #FFFFFF;
+$teriary-container: #FFD8E4;
+$on-teriary-container: #31111D;
+
+$error: #B3261E;
+$on-error: #FFFFFF;
+$error-container: #F9DEDC;
+$on-error-container: #410E0B;
+
+$background: #FFFBFE;
+$on-background: #1C1B1F;
+$surface: #FFFBFE;
+$on-surface: #1C1B1F;
+
+$outline: #79747E;
+$surface-variant: #E7E0EC;
+$on-surface-variant: #49454F;
+
+$dark: #000;
+$gray: #ccc;
+
+$colors: (
+  "primary": $primary,
+  "onPrimary": $on-primary,
+  "primaryContainer": $primary-container,
+  "onPrimaryContainer": $on-primary-container,
+
+  "secondary": $secondary,
+  "onSecondary": $on-secondary,
+  "secondaryContainer": $secondary-container,
+  "onSecondaryContainer": $on-secondary-container,
+
+  "teriary": $teriary,
+  "onTeriary": $on-teriary,
+  "teriaryContainer": $teriary-container,
+  "onTeriaryContainer": $on-teriary-container,
+
+  "error": $error,
+  "onError": $on-error,
+  "errorContainer": $error-container,
+  "onErrorContainer": $on-error-container,
+
+  "background": $background,
+  "onBackground": $on-background,
+  "surface": $surface,
+  "onSurface": $on-surface,
+
+  "outline": $outline,
+  "surfaceVariant": $surface-variant,
+  "onSurfaceVariant": $on-surface-variant,
+
+  "dark": $dark,
+  "gray":$gray,
+);

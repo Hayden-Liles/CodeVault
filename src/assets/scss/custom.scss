@@ -1,0 +1,63 @@
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    color: color-yiq($value);
+    background-color: $value !important;
+  }
+  .text-#{$color} {
+    color: $value !important;
+  }
+}
+
+@each $font, $value in $fonts {
+  .font-#{$font}{
+    font-family: $value;
+  }
+  .placeh-font-#{$font}::placeholder{
+    font-family: $value;
+  }
+}
+
+.selectable {
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    &:after {
+      opacity: 0.1;
+    }
+  }
+
+  &:after {
+    border-radius: inherit;
+    bottom: 0;
+    color: inherit;
+    content: "";
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+    background-color: currentColor;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+body.debug .container,
+body.debug .container-fluid {
+  outline: 2px double blue;
+  outline-offset: -2px;
+}
+
+body.debug .row {
+  outline: 2px dashed red;
+  outline-offset: -2px;
+}
+
+body.debug [class*="col-"] {
+  outline: 2px dotted forestgreen;
+  outline-offset: -3px;
+}
